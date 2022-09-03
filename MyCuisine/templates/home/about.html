@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+About Us
+{% endblock %}
+
+{% block body %}
+<br>
+<div class="container text-light">
+    
+    <i class="fa-solid fa-user-chef"></i> <!-- uses solid style -->
+    <h2>About Us</h2>
+    <h5>
+        We are the the best 5 star Restaurant to provide you with the best taste all over the world.
+    </h5>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="card-group bg-dark">
+            <div class="card bg-dark text-light">
+                <div class="card-header">
+                    <h5>
+                        Reach us out at
+                    </h5>
+                </div>
+                <a href="https://goo.gl/maps/WH6aY4V6CSTKY4sd7" target="_blank">
+                    <img class="card-img-top" src="{% static 'img/map.png' %}" width="50%" alt="map" />
+                </a>
+            </div>
+            <div class="card bg-dark text-light">
+                <div class="card-header">
+                    <h5>
+                        Contact us
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">Address: Near TCET, A-Block, Gate No 5, Thakur Educational Campus, Ramnarayan Thakur Rd, Thakur Village, Kandivali East, Mumbai, Maharashtra 400101</p>
+                </div>
+                <div class="card-body">
+                    <p class="card-text"><small class="text-muted">Follow and Connect us at:</small></p>
+                    <h2 class="card-title">
+                        <a style="text-decoration: none;" class="text-light pr-3" href="{% url 'home' %}">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>    
+                        <a style="text-decoration: none;" class="text-light pr-3" href="{% url 'home' %}">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>    
+                        <a style="text-decoration: none;" class="text-light pr-3" href="{% url 'home' %}">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>    
+                        <a style="text-decoration: none;" class="text-light pr-3" href="{% url 'home' %}">
+                            <i class="fa-solid fa-phone"></i>
+                        </a>    
+                    </h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

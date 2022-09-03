@@ -20,4 +20,6 @@ from home import views as homeview
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', homeview.home , name="home"),
+    path('about/', homeview.about , name="about"),
+    path('feedback/', homeview.feedback , name="feedback"),
 ]

@@ -1,41 +1,20 @@
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" style="border: solid 10px; border-color: rgb(110, 0, 0);">
+<br>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="border: solid 10px; border-color: rgb(110, 0, 0);">
     <a class="navbar-brand" href="{% url 'home' %}">MyCuisine</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
 
-
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          {% if user.is_customer %}
-            <a class="nav-link" href="{# url 'customer' user #}">Home</a>
-          {% elif user.is_dealer %}
-            <a class="nav-link" href="{# url 'customer' user #}">Home</a>
-          {% endif %}
+            <a class="nav-link" href="{% url 'home' %}">Home</a>
         </li>
         <li class="nav-item">
-          {% if user.is_superuser %}
-            <a class="nav-link" href="{# url 'customer' user #}">Buy Waste</a>
-          {% endif %}
+            <a class="nav-link" href="{% url 'about' %}">About Us</a>
         </li>
         <li class="nav-item">
-          {% if user.is_customer %}
-            <a class="nav-link" href="{# url 'customer' user #}">Buy</a>
-          {% elif user.is_dealer %}
-            <a class="nav-link" href="{# url 'customer' user #}">Add</a>
-          {% endif %}
-        </li>
-        <li class="nav-item">
-          {% if user.is_dealer %}
-          <a class="nav-link" href="{# url 'customer' user #}">Your Items</a>
-          {% endif %}
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{# url 'customer' user #}">Events</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="{# url 'customer' user #}">Waste Rates</a>
+            <a class="nav-link" href="{% url 'feedback' %}">Feedback</a>
         </li>
       </ul>
 
