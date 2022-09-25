@@ -1,0 +1,154 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Menu
+{% endblock %}
+
+{% block body %}
+<br>
+<div class="row bg-dark" style="height: 600px; ">
+    <div class="col-sm-3" style="border-right: 2px solid white;">
+        {% include 'sidebar.html' %}
+    </div>
+    <div class="col-sm-9 bg-dark pt-3 pb-5 pr-3 pl-3">
+        <div id="accordion">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                          Vegetarian
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                            <li>Veg Burger</li>
+                            <li>Veg Sandwich</li>
+                            <li>Veg Frankie</li>
+                            <li>Veg Rice</li>
+                            <li>Veg Thali</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                <div class="card">
+                    <div class="card-header" id="headingFour">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          Chinese
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                            <li>Chinese Bhel</li>
+                            <li>Chinese Manchurian Dry</li>
+                            <li>Chinese Gravy Manchurian</li>
+                            <li>Chinese Fried Rice</li>
+                            <li>Chinese Choupsey</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Non Veg
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                            <li>Chicken Burger</li>
+                            <li>Chicken Sandwich</li>
+                            <li>Chicken Crispy</li>
+                            <li>Chicken Lollipop</li>
+                            <li>Chicken Chilly</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                <div class="card">
+                    <div class="card-header" id="headingFive">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                          Mughlai
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                            <li>Chicken Korma</li>
+                            <li>Nihari Mutton</li>
+                            <li>Mughlai Pulao</li>
+                            <li>Mutton Seekh Kebab</li>
+                            <li>Mughlai Paratha</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          Fishes and Prawns
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                            <li>Prawns Biryani</li>
+                            <li>Prawns Pulao</li>
+                            <li>Prawns Rice</li>
+                            <li>Prawns Garlic</li>
+                            <li>Prawns Curry</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                <div class="card">
+                    <div class="card-header" id="headingSix">
+                      <h5 class="mb-0">
+                        <button class="btn btn-link text-dark" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                          Thai
+                        </button>
+                      </h5>
+                    </div>
+                
+                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                      <div class="card-body">
+                        <ul>
+                            <li>Guay Teow (Noodle Soup)</li>
+                            <li>Tom Yum Goong (Spicy Shrimp Soup)</li>
+                            <li>Tom Kha Gai (Chicken in Coconut Soup)</li>
+                            <li>Som Tam (Spicy Green Papaya Salad)</li>
+                            <li>Yam Talay (Spicy Seafood Salad)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

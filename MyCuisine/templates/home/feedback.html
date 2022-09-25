@@ -13,5 +13,77 @@ Feedback
         <br>
         Your feedback will be appreciated.
     </h2>
+    <div class="row text-dark">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6 bg-white pt-5 pl-5 pr-5 pb-5">
+            <form action="{% url 'home' %}">
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Email address</label>
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Name</label>
+                  <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlInput1">Phone Number</label>
+                  <input type="number" class="form-control" id="exampleFormControlInput1" placeholder="Mobile Number">
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Rate the responsiveness of the website</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Rate the User Interface</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Rate the Satisfaction achieved</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Rate the completeness of the website</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                <div class="form-group">
+                  <label for="exampleFormControlSelect1">Rate the overall experience of the restaurant and the website</label>
+                  <select class="form-control" id="exampleFormControlSelect1">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Any Suggestions?</label>
+                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+                <div class="form-group">
+                  <input type="button" value="Submit" class="btn btn-success btn-lg form-control mb-5">
+                </div>
+            </form>
+        </div>
+    </div>
 </div>
 {% endblock %}

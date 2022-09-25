@@ -12,3 +12,7 @@ def about(request):
 def feedback(request):
     context = {}
     return render(request,"home/feedback.html",context)
+
+def menu(request):
+    context = {}
+    return render(request,"home/menu.html",context)

@@ -22,4 +22,5 @@ urlpatterns = [
     path('', homeview.home , name="home"),
     path('about/', homeview.about , name="about"),
     path('feedback/', homeview.feedback , name="feedback"),
+    path('menu/', homeview.menu , name="menu"),
 ]

@@ -7,6 +7,11 @@ MyCuisine
 
 {% block body %}
 <br>
+<marquee class="pt-2 pb-2 pl-2 pr-2" behavior="" direction="" style="background-color: red;">
+  Todays Special: Paneer Tikka Masala
+</marquee>
+<br>
+<br>
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -56,4 +61,28 @@ MyCuisine
       <span class="sr-only">Next</span>
     </a>
   </div>
+  <br>
+  <div class="row">
+    <div class="col-sm-3">
+      {% include 'sidebar.html' %}
+    </div>
+    <div class="col-sm-9">
+      <div class="bg-dark text-white pr-3 pl-3 pb-3 pt-3">
+          <h1>
+            Welcome User,
+          </h1>
+          <h4>
+            Our Restaurant ranks top 1000 in india and has been known to have greatest and tastiest food ever made.
+            <br>
+            Are you hungry and just wanted to have something tasty?
+            <br><br>
+            Well, MyCuisine would staisfy your hunger with the best food which will provide you the taste that you would have never tasted before.
+            So what are you waiting for?
+            <br><br>
+          </h4>
+        </div>
+        <br>
+    </div>
+  </div>
+  
 {% endblock %}
